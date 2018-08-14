@@ -1,0 +1,17 @@
+The data for the project can be found in the IU box link
+
+1. Stress Detection Audio Files -  https://iu.box.com/s/tm7e9i4e9ibo3g5204hwvxsd4q6p6wbs
+2. Dialog Act Classification Audio Files  - https://iu.box.com/s/z6dro5rr2rkoc1w11ecdjns9wqezzhj3 
+
+Code Files:
+
+ 1. Stress Detection task  -  Data: Use Stress Detection Audio Files
+ 							  Step 1: Run "stress_word_detection.py" to detect if there is stress word in audio
+ 							  Step 2: Run "stress_word_identification.py" to get the stress word. This requires request to google cloud 		speech API. To set Google Speech API, use https://cloud.google.com/speech-to-text/
+
+
+ 2. Dialog Act Classification task - Data: Use Dialog Act Classification Audio Files
+ 									 Step 1: Generate pkl files for the audio samples using "pkl_creator.py"
+ 									 Step 2: Run the jupyter notebook "Dialog_Speech_CNN.ipynb"
+ 									 		 The notebook expects the pickled files to be placed in Google Drive. The file ID's need to be changed in the code "Dialog_Speech_CNN.ipynb".
+
